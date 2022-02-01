@@ -9,6 +9,7 @@ license = "MIT"
 python = "^3.8"
 jupyter = "^1.0.0"
 jupyterlab = "^3.2.8"
+pretty-html-table = "^0.9.15"
 
 [tool.poetry.dev-dependencies]
 pandas = "^1.4.0"

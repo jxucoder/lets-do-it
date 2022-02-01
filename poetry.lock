@@ -792,7 +792,7 @@ test = ["pytest", "coverage", "requests", "nbval", "selenium", "pytest-cov", "re
 name = "numpy"
 version = "1.22.1"
 description = "NumPy is the fundamental package for array computing with Python."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.8"
 
@@ -811,7 +811,7 @@ pyparsing = ">=2.0.2,<3.0.5 || >3.0.5"
 name = "pandas"
 version = "1.4.0"
 description = "Powerful data structures for data analysis, time series, and statistics"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.8"
 
@@ -894,6 +894,17 @@ python-versions = ">=3.7"
 [package.extras]
 docs = ["Sphinx (>=4)", "furo (>=2021.7.5b38)", "proselint (>=0.10.2)", "sphinx-autodoc-typehints (>=1.12)"]
 test = ["appdirs (==1.4.4)", "pytest (>=6)", "pytest-cov (>=2.7)", "pytest-mock (>=3.6)"]
+
+[[package]]
+name = "pretty-html-table"
+version = "0.9.15"
+description = "Make pandas dataframe looking pretty again"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pandas = "*"
 
 [[package]]
 name = "prometheus-client"
@@ -1420,7 +1431,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "c6eba1fc3560dff4ae96f02d342ffa251bfe3793a9613e48e583b58e2184e1cb"
+content-hash = "dc91efb39ab28bc158470f95dacfe072a4a4e9a247ee4809b941c8d5c0292449"
 
 [metadata.files]
 altair = [
@@ -1947,6 +1958,10 @@ pillow = [
 platformdirs = [
     {file = "platformdirs-2.4.1-py3-none-any.whl", hash = "sha256:1d7385c7db91728b83efd0ca99a5afb296cab9d0ed8313a45ed8ba17967ecfca"},
     {file = "platformdirs-2.4.1.tar.gz", hash = "sha256:440633ddfebcc36264232365d7840a970e75e1018d15b4327d11f91909045fda"},
+]
+pretty-html-table = [
+    {file = "pretty_html_table-0.9.15-py3-none-any.whl", hash = "sha256:7404150ab77b65c3984cc225d47078fe8b71bb686c6061156700d18bcdce61d6"},
+    {file = "pretty_html_table-0.9.15.tar.gz", hash = "sha256:329403ac281a37b8d3a09152b3bc7951703daab42388bad4d5f30b12bc9998eb"},
 ]
 prometheus-client = [
     {file = "prometheus_client-0.13.1-py3-none-any.whl", hash = "sha256:357a447fd2359b0a1d2e9b311a0c5778c330cfbe186d880ad5a6b39884652316"},
