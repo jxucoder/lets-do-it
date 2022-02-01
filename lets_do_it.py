@@ -59,7 +59,8 @@ with col1:
     st.title("✅ Let's Do it")
 with col3:
     st.header("#TODO tracker")
-blame_txt = st.sidebar.file_uploader("git blame results")
+st.sidebar.write("Run **todo_script.sh** to get blame results for a repo")
+blame_txt = st.sidebar.file_uploader("Submit the git blame results.txt")
 
 
 if blame_txt:
